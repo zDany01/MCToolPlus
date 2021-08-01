@@ -29,13 +29,35 @@ namespace MCToolPlus
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.WorldManagerBtn = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // WorldManagerBtn
+            // 
+            this.WorldManagerBtn.Location = new System.Drawing.Point(70, 12);
+            this.WorldManagerBtn.Name = "WorldManagerBtn";
+            this.WorldManagerBtn.Size = new System.Drawing.Size(114, 39);
+            this.WorldManagerBtn.TabIndex = 1;
+            this.WorldManagerBtn.Text = "World Manager";
+            this.WorldManagerBtn.UseVisualStyleBackColor = true;
+            // 
+            // MainMenu
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(261, 62);
+            this.Controls.Add(this.WorldManagerBtn);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.Name = "MainMenu";
+            this.Text = "Minecraft Tools";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button WorldManagerBtn;
     }
 }
 
