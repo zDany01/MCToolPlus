@@ -19,4 +19,13 @@ namespace MCToolPlus
             Application.Run(new MainMenu());
         }
     }
+    namespace Forms
+    {
+        public struct AppForms
+        {
+            public static Form WorldManager = new WorldManager();
+            public static Form MainMenu;
+            public static Form LogForm = new LogForm();
+        }
+    }
 }
